@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #141414;
+}
+
+
+
+
+header{
+    height: 291px;
+    background-color: #17171A;
+    padding: 64px 0px 64px 0px;
+    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* header*/
+
+header p{
+    color: #E07B67;
+    font-size: 40px;
+    line-height: 51.4px;
+}
+
+header p span{
+    color: #ffff;
+}
+
+
+header .box{
+    width: 900px;
+    height: 64px;
+    border: 2px solid #252529;
+    border-radius: 8px;
+    padding: 16px 24px 16px 24px;
+    gap: 16px;
+    background-color: #252529;
+    display: flex;
+    align-items: center;
+}
+
+header .box i {
+    font-size: 32px;
+    color: #E07B67;
+}
+
+
+header .box input{
+    flex: 1;
+    height: inherit;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* 
+
+main{
+    min-height: 300px;
+ 
+} */
+
+main .main-area {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+
+
+
+/*models*/
+
+
+.card{
+    width: 900px;
+    /* height: 200px; */
+    background-color: #17171A;
+    margin: 20px auto;
+    padding: 30px 30px;
+    border-radius: 8px;
+    transition: all ease-in-out .3s;
+    border: 2px solid #141414;
+    cursor: pointer;
+}
+
+.card:hover{
+    border: 2px solid #E07B67;
+}
+
+.card .card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card .card-header span,
+.card .card-header i{
+    color: #E07B67;
+    font-weight: 400;
+}
+
+.card .card-header i{
+    cursor: pointer;
+}
+
+
+.card .card-body{
+    color: #fff;
+}
+
+.card .card-body .card-title{
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+
+.card .card-body .card-desc{
+    font-size: 17px;
+    text-align: justify;
+}
+
+
+.models{
+    display:none;
+}
+
+
+
+
+@media (max-width: 950px){
+
+    header{
+        width: 100vw;
+    }
+    header .box,
+    .card {
+        width: calc(100vw - 50px);
+    }
+
+}
